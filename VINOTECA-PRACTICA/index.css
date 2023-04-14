@@ -1,0 +1,703 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+header {
+    width: 100vw;
+    height: 10vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    background-color: rgb(0, 0, 0);
+}
+
+main {
+    width: 100vw;
+    height: 80%;
+}
+
+.navegacion {
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.imagen {
+    width: 30%;
+    margin: 0px 10px;
+}
+
+.imagen img {
+    width: 250px;
+    height: 10vh;
+}
+
+.botones button {
+    font-size: 16px;
+    font-weight: bolder;
+    color: rgb(255, 255, 255);
+    background-color: black;
+    padding: 10px;
+    margin: 0px 10px;
+}
+
+.botones button:hover {
+    background-color: rgb(105, 13, 13);
+}
+
+.login {
+    margin-right: 10px;
+}
+
+.login i {
+    background-color: black;
+    color: white;
+    font-size: 30px;
+    padding: 5px;
+}
+
+.bloque-uno {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.imagen-uno {
+    width: 80%;
+    height: 230px;
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.589);
+    margin-top: 30px;
+}
+
+.imagen-uno img {
+    width: 0px;
+    flex-grow: 1;
+    object-fit: contain;
+    opacity: .8;
+    transition: .5s ease;
+}
+
+.imagen-uno img:hover {
+    width: 200px;
+    height: 300px;
+    opacity: 1;
+    filter: contrast(120%);
+}
+
+.cards {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.card {
+    width: 250px;
+    height: 320px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    align-items: center;
+    border: 2px solid black;
+    background-color: beige;
+    margin: 40px 15px;
+}
+
+.card p {
+    font-size: 18px;
+    font-weight: bolder;
+}
+
+.card img {
+    width: 200px;
+    height: 180px;
+}
+
+.detalles {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+button {
+    padding: 10px;
+    background-color: rgb(105, 13, 13);
+    color: white;
+    font-weight: bolder;
+}
+
+footer {
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+}
+
+.iconos ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    list-style-type: none;
+}
+
+.iconos li i {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+    color: white;
+    margin: 10px;
+    font-size: 35px;
+}
+
+.copy p {
+    font-size: 10px;
+    color: white;
+    margin-right: 15px;
+}
+
+.bloque-dos section {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.bloque-dos h1 {
+    font-size: 50px;
+    font-weight: bolder;
+}
+
+.nosotros {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.galeria {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: self-start;
+}
+
+.imagen-n {
+    width: 50%;
+}
+
+.galeria img {
+    width: 400px;
+    height: 300px;
+}
+
+.video-n {
+    width: 50%;
+}
+
+.texto-n {
+    display: flex;
+    align-items: center;
+}
+
+.texto-n {
+    width: 50%;
+    height: 600px;
+    font-size: 30px;
+    text-align: justify;
+}
+
+.bloque-tres {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.filtro {
+    padding-left: 82%;
+}
+
+.bloque-cuatro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-uno {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.formulario {
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.form h1 {
+    font-size: 30px;
+    font-weight: bolder;
+    margin: 20px 0px 40px 0px;
+    text-align: center;
+}
+
+
+.img-form {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-form img {
+    width: 82%;
+    height: 300px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="documento"],
+textarea {
+    width: 100%;
+    height: 25px;
+    outline: none;
+    display: block;
+    color: #000000;
+    padding: 7px;
+    border: none;
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 10px;
+    font-size: 18px;
+    background-color: transparent;
+    resize: none
+}
+
+.plan {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+input[type="radio"] {
+    width: 100%;
+    color: black;
+    margin-top: 20px;
+}
+
+.formulario_dos {
+    width: 80%;
+    border: none;
+    font-weight: normal;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+button[type="submit"] {
+    display: block;
+    font-size: 18px;
+    width: 100px;
+    height: 40px;
+    margin: 20px 0px 0px 10px;
+    background-color: rgb(105, 13, 13);
+    color: white;
+    font-weight: bolder;
+}
+
+.botones-form {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.botones-form button {
+    font-size: 16px;
+    font-weight: bolder;
+    color: rgb(255, 255, 255);
+    background-color: black;
+    padding: 10px;
+    margin: 0px 20px 20px 20px;
+}
+
+.botones-form button:hover {
+    background-color: rgb(105, 13, 13);
+}
+
+.Funcion {
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin: 50px 0px;
+}
+
+.comoFunciona {
+    width: 50%;
+}
+
+.comoFunciona h1 {
+    font-size: 30px;
+    font-weight: bolder;
+    text-align: left;
+}
+
+.comoFunciona ul {
+    width: 500px;
+    border: 2px solid black;
+    list-style-type: none;
+    padding: 20px;
+    margin: 20px 0px;
+    background-color: beige;
+}
+
+.comoFunciona li {
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+.regalo {
+    width: 30%;
+}
+
+.regalo img {
+    width: 300px;
+    height: 400px;
+}
+
+.regalo-beneficio {
+    width: 40%;
+}
+
+.regalo-beneficio img {
+    width: 600px;
+    height: 400px;
+}
+
+.beneficio h1 {
+    font-size: 30px;
+    font-weight: bolder;
+    text-align: left;
+}
+
+.beneficio ul {
+    width: 500px;
+    border: 2px solid black;
+    list-style-type: none;
+    padding: 20px;
+    margin: 20px 0px;
+    background-color: beige;
+}
+
+.beneficio li {
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+.bloque-cinco {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.bloque-seis section{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.t-detalle {
+    font-size: 30px;
+    font-weight: bolder;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.detallesDos {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.detalle-producto {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.detalle-producto {
+    width: 50%;
+}
+
+.img-product {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.img-product img {
+    width: 350px;
+    height: 250px;
+}
+
+.detalles-producto {
+    width: 100%;
+}
+
+.detalles-producto {
+    width: 400px;
+    font-size: 20px;
+    border: 2px solid black;
+    background-color: beige;
+    margin-top: 25px;
+}
+
+.detalles-producto ul {
+    list-style-type: none;
+    padding: 20px;
+}
+
+.clasificacion {
+    width: 50%;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.clasificacion {
+    font-size: 20px;
+    font-weight: bolder;
+    text-align: center;
+}
+
+.cantidad {
+    font-size: 20px;
+    border: 2px solid black;
+    background-color: beige;
+    padding: 10px 15px;
+}
+
+.calificar {
+    text-decoration-line: underline;
+    font-weight: bolder;
+}
+
+.bloque-siete section{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.carrito {
+    width: 100%;
+    height: 800px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.subtotal {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.costo h1{
+    width: 100%;
+    margin: 20px 0px 0px 120px;
+    text-align: right;
+    text-decoration-line: overline;
+}
+
+.pagar {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.tarjeta-c {
+    width: 100%;
+    height: 120px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.tarjeta-c img {
+    width: 140px;
+    height: 100px;
+}
+
+.total h1{
+    margin: 10px 0px;
+    text-align: center;
+}
+
+.datosTDC{
+    margin: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.bloque-ocho section{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.bloque-ocho section h1{
+    font-size: 30px;
+    font-weight: bolder;
+    margin: 20px 0px 40px 0px;
+    text-align: center;
+}
+
+.giftCard{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.giftCard img{
+    width: 300px;
+    height: 200px;
+    border-radius: 20px;
+    margin: 20px;
+}
+
+.gCard{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.bloque-nueve section{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.formApp{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.form{
+    width: 70%;
+}
+.app{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.app img{
+    width: 150px;
+    height: 150px;
+    margin: 30px 0px;
+}
+
+.sucursalM{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.mapa aside{
+    width: 50%;
+    margin-left: 30px;
+}
+
+.sucursal{
+    width: 50%;
+    height: 300px;
+}
+
+.sucursal ul{
+    list-style-type: none;
+    line-height: 35px;
+    font-weight: bolder;
+    font-size: 18px;
+}
+
+.sucursal h1{
+    font-size: 30px;
+    font-weight: bolder;
+    text-align: left;
+}
